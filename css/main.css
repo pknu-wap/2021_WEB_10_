@@ -25,17 +25,17 @@
 
 .gnb li {
   list-style: none;
+  text-decoration: none;
   padding-left: 0px;
   display: block;
   text-align: center;
-}
-#menu {
   border: 1rem solid;
   background: white;
   color: black;
 }
 .gnb li ul {
   list-style: none;
+  text-decoration: none;
   padding-left: 0px;
   padding: 8px 16px;
 }
