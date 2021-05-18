@@ -1,0 +1,41 @@
+.bg {
+  position: relative;
+  width: 1920;
+  height: 917px;
+}
+.logo {
+  position: absolute;
+  left: 1000px;
+  top: -50px;
+  width: 800px;
+  height: auto;
+}
+.main nav {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+
+.gnb li ul {
+  display: none;
+}
+.gnb li:hover ul {
+  display: block;
+}
+
+.gnb li {
+  list-style: none;
+  padding-left: 0px;
+  display: block;
+  text-align: center;
+}
+#menu {
+  border: 1rem solid;
+  background: white;
+  color: black;
+}
+.gnb li ul {
+  list-style: none;
+  padding-left: 0px;
+  padding: 8px 16px;
+}
