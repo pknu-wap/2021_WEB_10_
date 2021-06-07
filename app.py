@@ -4,7 +4,7 @@ import pymysql
 app = Flask(__name__)
 app.secret_key = 'what did i eat today'
 
-db = pymysql.connect(host='localhost', port=3307, user='root', passwd='mqazxsw1259!', db='join1', charset='utf8')
+db = pymysql.connect(host='localhost', port=, user=, passwd=, db=, charset='utf8')
 cur = db.cursor()
 
 @app.route("/")
