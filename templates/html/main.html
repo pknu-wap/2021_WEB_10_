@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>오늘 뭐먹었지?</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <img src="img/main2.png" class="bg" />
+      <a href="main.html">
+        <img src="img/mainlogo.png" alt="logo" class="logo"
+      /></a>
+
+      <nav>
+        <ul class="gnb">
+          <li>
+            <a href="#"><h1 id="menu">　　menu　　</h1></a>
+            <ul>
+
+              {% if session['loggedin'] %}
+              <li><a href="{{url_for('logout')}}">{{ session['user_id'] }} (로그아웃)</a></li>
+              {% else %}
+
+              <li><a href="{{url_for('login_front')}}">login</a></li>
+
+              {% endif %}
+
+              <li><a href="">나의 칼로리</a></li>
+              <li><a href="">정보 공유</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

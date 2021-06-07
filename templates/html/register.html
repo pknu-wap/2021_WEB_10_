@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>회원가입</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
+  </head>
+  <body>
+    <div class="register-container">
+      <form action="/register_back" method="post">
+      <h2>Register</h2>
+      <div>
+        <h5>이름</h5>
+        <input class="input" type="text" name="user_name"/>
+      </div>
+      <div>
+        <h5>생년월일(ex|1990-01-01)</h5>
+        <input class="input" type="text" name="user_yymmdd"/>
+      </div>
+      <div>
+        <h5>이메일</h5>
+        <input class="input" type="text" name="user_email"/>
+      </div>
+      <div>
+        <h5>아이디</h5>
+        <input class="input" type="text" name="user_id"/>
+      </div>
+      <div>
+        <h5>비밀번호</h5>
+        <input class="input" type="password" name="user_pw"/>
+      </div>
+      <div>
+        <h5>비밀번호 확인</h5>
+        <input class="input" type="password" name="user_chpw"/>
+      </div>
+      <a href="login.html"
+        ><input type="submit" class="btn" value="register"
+      /></a>
+    </form>
+    </div>
+  </body>
+</html>
